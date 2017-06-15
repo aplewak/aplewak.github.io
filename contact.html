@@ -77,23 +77,28 @@
 </div><br>
 
 <footer class="container-fluid text-center">
-  <p>&#169 Andrew Plewak 2017</p>
-					   <style>
-#googleMap {
-    width: 100%; /* Span the entire width of the screen */
-    height: 400px; /* Set the height to 400 pixels */
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); /* Change the color of the map to black and white * /
-}
-</style>
-
-<!-- Add Google Maps -->
-<div id="googleMap"></div>
-		   
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC21BAP_sj3LP7rxdqpMMG95ykq7di3e9A&callback=myMap"></script>
-										 
-										 
+					   
+<h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJkU_Lc0FKMDHgmbYZUzzRY_qc_bRH0wI&callback=initMap">
+    </script>	
+										   
+										   
+										   
 </footer>
 
 </body>
