@@ -86,10 +86,10 @@
 function myMap() {
 var mapProp= {
     center:new google.maps.LatLng(42.955998, -78.696324),
-    zoom:50,
+    zoom:10,
 };
 var marker = new google.maps.Marker({
-    position: myCenter,
+    position: center,
     icon: "pinkball.png"
   });
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
