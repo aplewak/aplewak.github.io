@@ -122,33 +122,22 @@
 <div id="googleMap" style="width:100%;height:400px;"></div>
 
 <script>
-var marker;
 
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
-    center: {lat: 42.9600502, lng: -78.7160475}
-  });
-
-  marker = new google.maps.Marker({
-    map: map,
-    draggable: true,
-    animation: google.maps.Animation.DROP,
-    position: {lat: 42.9600502, lng: -78.7160475}
-  });
-  marker.addListener('click', toggleBounce);
-}
-
-function toggleBounce() {
-  if (marker.getAnimation() !== null) {
-    marker.setAnimation(null);
-  } else {
-    marker.setAnimation(google.maps.Animation.BOUNCE);
-  }
-}
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+   
 </script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC21BAP_sj3LP7rxdqpMMG95ykq7di3e9A&callback=myMap"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC21BAP_sj3LP7rxdqpMMG95ykq7di3e9A&callback=myMap">
+</script>
 										   
 										   
 										   
