@@ -128,6 +128,13 @@ var mapProp= {
 };
 var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
+	  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+	
+	marker.setMap(map);
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC21BAP_sj3LP7rxdqpMMG95ykq7di3e9A&callback=myMap"></script>				   
