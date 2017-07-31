@@ -16,6 +16,48 @@
   #about {padding-top:50px;height:1500px;color: #fff; background-color: #cc9966;}
   #projects {padding-top:50px;height:2000px;color: #fff; background-color: black;}
   #contact {padding-top:50px;height:2000px;color: #fff; background-color: grey;}
+	  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 30.99999%;
+}
+
+@media only screen and (max-width: 1200px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+	  
+	  
+	  
+	  
+	  
+	  
   </style>
   
    <style>
@@ -78,24 +120,72 @@
 <div id="about" class="container-fluid">
   <h1><b><font color="black">ABOUT</b></font></h1>
   <div class="container"> 
-	  <img src="Images/sb.jpg" class="img-responsive"  style="width:150px;height:150px;" alt="Image"></div>
-  <div class="jumbotron">
+  	<div class="jumbotron">
   
-       <h3><b><font color="black">I'm Andrew Plewak,</b></font></h3>
-       <h3><b><font color="black">  A full stack Engineer with a background in Software Engineering.</b></font></h3>
-       <h3><b><font color="black">I devote a lot of my time into designing embedded systems for automotive applications from the ground up,</b></font></h3>
-       <h3><b><font color="black">Meaning I develop all the Software, Circuitry, and physical hardware for every application.</b></font></h3>
-       <font color="black"> </b></font></h3>
+      	 	<h3><b><font color="black">I'm Andrew Plewak,</b></font></h3>
+      		<h3><b><font color="black">  A full stack Engineer with a background in Software Engineering.</b></font></h3>
+      		<h3><b><font color="black">I devote a lot of my time into designing embedded systems for automotive applications from the ground up,</b></font></h3>
+      		<h3><b><font color="black">Meaning I develop all the Software, Circuitry, and physical hardware for every application.</b></font></h3>
+     		<font color="black"> </b></font></h3>
+	  </div>       
+        </div>  
+   </div>
 
-  </div>       
 
-</div>
-  
-</div>
+
 
 
 <div id="projects" class="container-fluid">
   <h1><b><font color="#cc9966">PROJECTS</font></b></h1>
+	
+	
+	<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_fjords.jpg">
+      <img src="img_fjords.jpg" alt="Trolltunga Norway" width="300" height="200">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="Images/sb.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
   <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 </div>
