@@ -91,6 +91,18 @@
          padding: 50px;
          display: none;
          }
+         
+         }
+         #panel2, #flip2 {
+         padding: 5px;
+         text-align: center;
+         border-radius: 25px;
+         border: solid 2px black;
+         }
+         #panel2 {
+         padding: 50px;
+         display: none;
+         }
       </style>
    </head>
    <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -182,34 +194,30 @@
          <h1><b><font color="white">CONTACT</font></b></h1>
                      <script> 
                $(document).ready(function(){
-                   $("#flip").click(function(){
-                       $("#panel").slideToggle("slow");
+                   $("#flip2").click(function(){
+                       $("#panel2").slideToggle("slow");
                    });
                });
             </script>
-         <div id="flip">
+         <div id="flip2">
                <h3>
                <font face="Andale Mono, monospace" color="black" ><b>Contact me </b></font>
                <h3>
                   </div>
-             <div id="panel">
+             <div id="panel2">
                <h3>
-               <font face="Andale Mono, monospace" color="black" ><b>Email</b></font> 
-                  
+               <font face="Andale Mono, monospace" color="black" ><b>Email</b></font>  
                   <p>
                         <h3>Email : andrewplewak@gmail.com </h3>
                         <a href="mailto:andrewplewak@gmail.com?subject=Feedback"> <span class="glyphicon glyphicon-envelope"</span></a>
                  </p> 
-            
                <h3>
-                  
                <h3>
                <font face="Andale Mono, monospace" color="black" ><b>Phone</b></font>
                   <p><h3>Phone Number: </h3></span>
                   <a href="tel://1-716-445-5470">+1 (716) 445-5470 <span class="glyphicon glyphicon-phone"</span> </a>
                  </p> 
-               <h3>
-                  
+               <h3>  
             </div>
             </div>
          
