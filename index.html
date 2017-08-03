@@ -7,6 +7,8 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
       <style>
          body {
          position: relative; 
@@ -144,14 +146,23 @@
          
          <h1><b><font color="black">ABOUT</b></font></h1>
          <div class="container">
+            
+            <script> 
+                     $(document).ready(function(){
+                         $("#flip").click(function(){
+                             $("#panel").slideToggle("slow");
+                         });
+                     });
+            </script>
+            
             <div id="flip">About me </div>
-
+             <div id="panel">Hello world!</div>
             <div class="jumbotron">
                <h3><b><font face="Andale Mono, monospace" color="skyblue">I'm Andrew,</b></font></h3>
                <h3><b><font face="Andale Mono, monospace" color="skyblue">  A full stack Engineer with a background in Software Engineering.</b></font></h3>
                <h3><b><font face="Andale Mono, monospace" color="skyblue">I devote a lot of my time into designing embedded systems for automotive applications from the ground up,</b></font></h3>
                <h3><b><font face="Andale Mono, monospace" color="skyblue">Meaning I develop all the Software, Circuitry, and physical hardware for every application.</b></font></h3>
-             <div id="panel">Hello world!</div>
+            
             </div>
          </div>
 
