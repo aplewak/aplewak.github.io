@@ -77,15 +77,29 @@
       </style>
       <style>
          h1 {
-         font-style: italic;   
-         font-family: Andale Mono, monospace;
-         }
+            font-style: italic;   
+            font-family: Andale Mono, monospace;
+          }
          .jumbotron{
-         background-color: 	#34495E!important;
+              background-color: 	#34495E!important;
          }
          .img{
          border-radius: 50%;
          }
+         }
+         
+         
+    #panel, #flip {
+       
+          padding: 5px;
+          text-align: center;
+   
+      }
+    #panel {
+       
+          padding: 50px;
+          display: none;
+
          }
       </style>
    </head>
@@ -130,12 +144,14 @@
          
          <h1><b><font color="black">ABOUT</b></font></h1>
          <div class="container">
+            <div id="flip">About me </div>
+
             <div class="jumbotron">
                <h3><b><font face="Andale Mono, monospace" color="skyblue">I'm Andrew,</b></font></h3>
                <h3><b><font face="Andale Mono, monospace" color="skyblue">  A full stack Engineer with a background in Software Engineering.</b></font></h3>
                <h3><b><font face="Andale Mono, monospace" color="skyblue">I devote a lot of my time into designing embedded systems for automotive applications from the ground up,</b></font></h3>
                <h3><b><font face="Andale Mono, monospace" color="skyblue">Meaning I develop all the Software, Circuitry, and physical hardware for every application.</b></font></h3>
-               
+             <div id="panel">Hello world!</div>
             </div>
          </div>
 
