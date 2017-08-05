@@ -15,7 +15,7 @@
          
          #home {
          padding-top:50px;color: #fff; background-color: white;
-         background-image: url("Images/sb.jpg");
+         background-image: url("Images/test2.jpg");
          background-repeat: no-repeat;
          background-attachment: fixed;
          height:1000px;
@@ -166,15 +166,7 @@
          <h1><b><font color="#cc9966">PROJECTS</font></b></h1>
          <h2 class="w3-center">Manual Slideshow</h2>
 
-                  <div class="w3-content w3-display-container">
-                    <img class="mySlides" src="Images/headlight.jpg" style="width:100%">
-                    <img class="mySlides" src="Images/boostgauge.jpg" style="width:100%">
-                    <img class="mySlides" src="Images/sb.jpg" style="width:100%">
-                    <img class="mySlides" src="Images/bg.jpg" style="width:100%">
-
-                    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-                  </div>
+          
 
 
             </div>
@@ -206,26 +198,8 @@
          
          
          <!-- java script moved below -->
-            <!-- java script for photos --> 
-       <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
+     
 
-            function plusDivs(n) {
-              showDivs(slideIndex += n);
-            }
-
-            function showDivs(n) {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              if (n > x.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = x.length}
-              for (i = 0; i < x.length; i++) {
-                 x[i].style.display = "none";  
-              }
-              x[slideIndex-1].style.display = "block";  
-            }
-</script>  
          
           <script> 
                $(document).ready(function(){
