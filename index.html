@@ -184,23 +184,56 @@
             </div>
          </div>
       </div>
-            
-            
       <!-- projects  section -->
       <div id="projects" class="container-fluid">
-         <h1><b><font color="#cc9966">PROJECTS</font></b></h1>
-        
-         
-               <div class="container">
-               <h2>
-               <font face="Andale Mono, monospace" color="skyblue" ><b>{ Current Projects }</b></font>
-               <h2>
+         <div class="container">
+            <h2>
+            <br>
+            <font face="Andale Mono, monospace" color="green" ><b>{ Current Projects }</b></font>
+            <br>
+            <br>
+            <!-- testing -->
+            <div class="w3-container">
+               <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-blue">Software</button>
+               <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-green">Hardware</button>
+               <div id="id01" class="w3-modal">
+                  <div class="w3-modal-content w3-animate-right">
+                     <header class="w3-container w3-teal">
+                        <span onclick="document.getElementById('id01').style.display='none'" 
+                           class="w3-button w3-display-topright">&times;</span>
+                        <h2>Modal Header</h2>
+                     </header>
+                     <div class="w3-container">
+                        <p>Some text..</p>
+                        <p>Some text..</p>
+                     </div>
+                     <footer class="w3-container w3-teal">
+                        <p>Modal Footer</p>
+                     </footer>
+                  </div>
                </div>
-           
-         
-        </div>
+               <div id="id02" class="w3-modal">
+                  <div class="w3-modal-content w3-animate-right">
+                     <header class="w3-container w3-teal">
+                        <span onclick="document.getElementById('id02').style.display='none'" 
+                           class="w3-button w3-display-topright">&times;</span>
+                        <h2>Modal Header</h2>
+                     </header>
+                     <div class="w3-container">
+                        <p>Some text..</p>
+                        <p>Some text..</p>
+                     </div>
+                     <footer class="w3-container w3-teal">
+                        <p>Modal Footer</p>
+                     </footer>
+                  </div>
+               </div>
+            </div>
+            <!-- test end -->
+            <h2>
+         </div>
       </div>
-         
+      </div>
       </div>
       </div>
       <!-- images in image gallery -->
@@ -212,19 +245,21 @@
             or="white">CONTACT</font></b></h1>
          </head>
          <body>
-            <div id="flip2">
-               <h3>
-               <font face="Andale Mono, monospace" color="black" ><b>Contact me </b></font>
-               <h3>
-            </div>
-            <div id="panel2">
-               <h3>
-                  <b>
-                     <font face="Andale Mono, monospace" color="#D35400">
-                        <span class="glyphicon glyphicon-phone"</span> Phone :  <a href="tel://1-716-445-5470"> 17164455470  </a>
-                  </b>
-               </h3>
-               <h3><span class="glyphicon glyphicon-envelope"</span> Email :  <a href="mailto:andrewplewak@gmail.com?subject=Feedback"> andrewplewak@gmail.com </a></b></font></h3>
+            <div class="container">
+               <div id="flip2">
+                  <h2>
+                  <font face="Andale Mono, monospace" color="black" ><b>{ Contact me }</b></font>
+                  <h2>
+               </div>
+               <div id="panel2">
+                  <h3>
+                     <b>
+                        <font face="Andale Mono, monospace" color="#D35400">
+                           <span class="glyphicon glyphicon-phone"</span> <a href="tel://1-716-445-5470"> 17164455470  </a>
+                     </b>
+                  </h3>
+                  <h3><span class="glyphicon glyphicon-envelope"</span>  <a href="mailto:andrewplewak@gmail.com?subject=Feedback"> andrewplewak@gmail.com </a></b></font></h3>
+               </div>
             </div>
       </div>
    </body>
