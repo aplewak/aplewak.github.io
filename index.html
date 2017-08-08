@@ -79,7 +79,7 @@
 				font-size: 16px;
 				margin: 4px 2px;
 				cursor: pointer;
-				border-radius: 30px;
+				border-radius: 10px;
 }	
       </style>
       <style>
@@ -115,6 +115,14 @@
          padding: 50px;
          display: none;
          }
+		 .modal-backdrop {
+				background-color: #7D87DE  ;
+				
+		}
+		.modal-body{
+			background-color: black ;
+			border-radius: px;
+		}
          <!-- -->
       
       </style>
@@ -184,7 +192,8 @@
 								<div class="container" >
 
 								  <button type="button1" class="button" data-toggle="modal" data-target="#modal1"><b>Custom Boost Gauge<b></button>
-								  <button type="button2" class="button" data-toggle="modal" data-target="#modal2">MPX5700GP </button>
+								  <button type="button2" class="button" data-toggle="modal" data-target="#modal2">MPX5700GP library </button>
+								  <button type="button3" class="button" data-toggle="modal" data-target="#modal3">RGB library </button>
 								  
 								   <!-- Modal content-->
 								  <div class="modal fade" id="modal1" role="dialog">
@@ -192,21 +201,40 @@
 									
 									  
 									  <div class="modal-content">
-										<div class="modal-header" style="background-color:white;>
+										<div class="modal-header" style="background-color:black;>
 										  <button type="button" class="close" data-dismiss="modal">&times;</button>
-										  <h2 class="modal-title" style="color:red;"" font face="Andale Mono, monospace" > <b>Boost Gauge </b></h2>
-										 <div class="modal-body">
-										  
-										   <img src="bgb.jpg" height="250" width="250">
-										    <img src="bgt.jpg" height="250" width="250">
+										  <h2 class="modal-title" style="color:#006666;"><font face="Andale Mono, monospace" > <b>Boost Gauge </b></h2></font>
+										 <div class="modal-body" style="background-color:black;>
+										
+										   <img src="Images/bgbj.jpg" height="200" width="200" >
+													
+										 
+										   <br>
+										   <img src="Images/bgtj.jpg" height="200" width="200" alt="bg design top">
+										   <img src="Images/bgbj.jpg" height="200" width="200" alt="bg design bttom">
 											<div class="container" >											
 										</div>
 										</div>
-										<h5 style="color:#006666;">This digital device allows you to monitor realtime turbo pressure readings. It's functionality is limited to the following listed below :</h5>
-											<li style="color:#006666;"> -30inHG to 101 psi</li>
-											<li style="color:#006666;"> Maximum Pressure tracking </li>
-											<li style="color:#006666;"> Maximum Vacuum tracking </li>
-										<div class="modal-footer">
+										<h5 style="color:#006666;"><b><font face="Andale Mono, monospace" color="skyblue">This digital device allows you to monitor real-time turbo pressure readings. Below are the technical specifications : 
+											
+											<br>
+											<br>
+											
+											<li style="color:#006666;"> 	-30inHG to 101 psi</li>
+											<li style="color:#006666;"> 	Maximum Pressure tracking </li>
+											<li style="color:#006666;"> 	Maximum Vacuum tracking </li>
+											<h5 style="color:#006666;"><b><font face="Andale Mono, monospace" color="skyblue">Current Fitments 
+											<br>
+											<br>
+												<li style="color:#006666;"> Saab 95 </li>
+												<li style="color:#006666;"> Audi S4 </li><div class="modal-footer">
+											</b></h5></font>
+											</b></h5></font>
+
+
+														<img src="Images/bg.jpg" height="250" width="200" style="color:#006666;">
+														<img src="s4 bg.jpg" height="250" width="200">
+										
 										  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 										</div>
 									  </div>
@@ -216,16 +244,23 @@
 								   <!-- Modal1 end  -->
 								   
 								   <!-- Modal content-->
+								   
+								   
+								     
 								   <div class="modal fade" id="modal2" role="dialog">
 									<div class="modal-dialog">
 								  
 									  <div class="modal-content">
+									  <h3 class="modal-title" style="color:#006666;"><font face="Andale Mono, monospace" ><b>MPX5700GP Pressure Sensor Data and Code
 										<div class="modal-header">
 										  <button type="button" class="close" data-dismiss="modal">&times;</button>
-										  <h4 class="modal-title">Modal Header</h4>
+										  
 										</div>
 										<div class="modal-body">
-										  <p>Some text in the modal.</p>
+										  <h4><b> A library to interface the MPX5700GP map sensor to convert analog voltage input to vacuum and PSI readings</b></h4>
+										   <h4><b> <a href="http://www.nxp.com/docs/en/data-sheet/MPX5700.pdf">Data Sheet</a></b></h4>
+										   <h4><b> <a href="https://github.com/aplewak/mpx5700/tree/master/m5700">C++ library</a></b></h4>
+										    </b></h5></font>
 										</div>
 										<div class="modal-footer">
 										  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -237,10 +272,37 @@
 								  
 								  
 								  
+								  <!-- modal 3 -->
+								    <div class="modal fade" id="modal3" role="dialog">
+									<div class="modal-dialog">
+								    
+									  <div class="modal-content">
+									  <h3 class="modal-title" style="color:#006666;"><font face="Andale Mono, monospace" ><b>RGB LED Library</b></h3></font>
+									  <h4 class="modal-title" style="color:#006666;"><font face="Andale Mono, monospace" ><b>
+										<div class="modal-header">
+										  <button type="button" class="close" data-dismiss="modal">&times;</button>
+										  
+										</div>
+										<div class="modal-body">
+										  <h4><b> A library to interface any RGB led </b></h4>
+										  <h4 style="color:skyblue;"><b> Functionality :</b></h4>
+										  <li style="color:#006666;"> 	Display RED,GREEN,BLUE</li>
+											<li style="color:#006666;"> Display custom Colors </li>
+											<li style="color:#006666;"> Dynamically change PWM pins during Object creation  </li>
+										    <h5><b> <a href="https://github.com/aplewak/RGB-LIBRARY">C++ library</a></b></h5>
+										    </b></h5></font>
+											
+										</div>
+										<div class="modal-footer">
+										  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									  </div>
+									  
+									</div>
+									
 								  
-								  
-								  
-								</div>  
+	
+								 
 						   <br>
 						 <!-- testing -->
 							<font face="Andale Mono, monospace" color="#f4d942" ><b>{ Hardware }</b></font>
@@ -248,27 +310,30 @@
 					<br>
 						
 					
-								   <button type="button3" class="button" data-toggle="modal" data-target="#modal3" font face="Andale Mono, monospace">Custom Exhaust Manifold flange</button>
-								    <button type="button4" class="button" data-toggle="modal" data-target="#modal4" font face="Andale Mono, monospace">Shift Knob</button>
+								   <button type="button4" class="button" data-toggle="modal" data-target="#modal4" font face="Andale Mono, monospace">Exhaust Manifold flange</button>
+								    <button type="button5" class="button" data-toggle="modal" data-target="#modal5" font face="Andale Mono, monospace">Shift Knob</button>
+									 <button type="button6" class="button" data-toggle="modal" data-target="#modal6" font face="Andale Mono, monospace">Headlight Design</button>
 
-
-								
-								  
-								   <div class="modal fade" id="modal3" role="dialog">
+									    <!-- modal 4 -->
+								    <div class="modal fade" id="modal4" role="dialog">
 									<div class="modal-dialog">
-								   <!-- Modal content-->
+								    
 									  <div class="modal-content">
+									  <h3 class="modal-title" style="color:#006666;"><font face="Andale Mono, monospace" ><b>Exhaust Manifold</b></h3></font>
+									  <h4 class="modal-title" style="color:#006666;"><font face="Andale Mono, monospace" ><b>
 										<div class="modal-header">
 										  <button type="button" class="close" data-dismiss="modal">&times;</button>
-										 <br>
-										 <br>
-										 <p>Some text in the modal.</p>
-										 <p style="color:red;">I am red</p>
-										 <br>
-										 <img src="charboy.jpg" height="300" width="300">
+										  
 										</div>
 										<div class="modal-body">
-										  
+										  <h4><b> A custom exhaust manifold flange design to fit the SAAB B2X5R engine platforms </b></h4>
+										  <h4 style="color:skyblue;"><b> Details  :</b></h4>
+										  <li style="color:#006666;">	1/2" Stainless or Carbon Steel</li>
+											<li style="color:#006666;"> High precision laser cut design </li>
+											<li style="color:#006666;"> Ideal for custom exhaust manifolds  </li>
+											<img src="Images/IMG_1872.JPG" height="200" width="200" >
+										    </b></h5></font>
+											
 										</div>
 										<div class="modal-footer">
 										  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -276,10 +341,39 @@
 									  </div>
 									  
 									</div>
-								  </div>
+							
+								
+								    <!-- modal 5 -->
+								    <div class="modal fade" id="modal5" role="dialog">
+									<div class="modal-dialog">
+								    
+									  <div class="modal-content">
+									  <h3 class="modal-title" style="color:#006666;"><font face="Andale Mono, monospace" ><b>Shift knob </b></h3></font>
+									  <h4 class="modal-title" style="color:#006666;"><font face="Andale Mono, monospace" ><b>
+										<div class="modal-header">
+										  <button type="button" class="close" data-dismiss="modal">&times;</button>
+										  
+										</div>
+										<div class="modal-body">
+										  <h4><b> An engineered solution to a common problem </b></h4>
+										  <h4 style="color:skyblue;"><b> Design features :</b></h4>
+										  <li style="color:#006666;"> 	Elastic material to allow ease of installation </li>
+											<li style="color:#006666;"> Works for 00-09 SAAB 95 manual gearbox </li>
+										    </b></h5></font>
+										</div>
+										<div class="modal-footer">
+										  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										</div>
+									  </div>
+									  
+									</div>
+								
 								  
 								  
-								   <div class="modal fade" id="modal4" role="dialog">
+								
+								  
+								  
+								     <div class="modal fade" id="modal6" role="dialog">
 									<div class="modal-dialog">
 								   <!-- Modal content-->
 									  <div class="modal-content">
@@ -297,7 +391,6 @@
 									  
 									</div>
 								  </div>
-								  
 								  
 								</div>
 														 
@@ -317,8 +410,7 @@
       <!-- Contact section -->
 	  
       <div id="contact" class="container-fluid">
-         <h1><b><font 
-            or="white">CONTACT</font></b></h1>
+         
          </head>
 		  
          <body>
