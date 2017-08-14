@@ -9,27 +9,53 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <style>
+
+
+.text {
+
+    left: 0;
+    position:absolute;
+    text-align:center;
+    top: 30px;
+    width: 100%
+}
+	  
+.parallax {
+    /* The image used */
+    background-image: url('Images/sko.jpg');
+	
+    /* Full height */
+    height: 75%;
+	width:auto;	
+	border-radius: 10px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
          body {
          position: relative; 
          }
          #home {
-         padding-top:50px;color: #fff; background-color: white;
+         padding-top:50px;color: #fff; background-color: dark grey;
          background-repeat: no-repeat;
-         background-attachment: fixed;
-         height:1000px;
-         background: #EC7063; /* For browsers that do not support gradients */
+        
+         height:600px;
+         background: dark grey; /* For browsers that do not support gradients */
          }
          #about {
-         padding-top:50px;height:1000px;color: #fff;             
+         padding-top:50px;height:800px;color: #fff;             
          background: #5499C7; /* For browsers that do not support gradients */
          }
          #projects {
-         padding-top:50px;height:1000px;color: #fff; background-color: black;          
+         padding-top:50px;height:900px;color: #fff; background-color: black;          
          background: #48C9B0; /* For browsers that do not support gradients */
          }
          #contact {
          padding-top:50px;
-         height:900px;color:
+         height:500px;color:
          #fff; background-color: #F5B041;
          }
          div.gallery img {
@@ -86,12 +112,14 @@
          h1 {
          font-style: italic;   
          font-family: Andale Mono, monospace;
+		 
          }
          .jumbotron{
          background-color: 	#34495E!important;
          }
          .img{
          border-radius: 50%;
+		 position:relative;
          }
          }
          #panel, #flip {
@@ -126,6 +154,9 @@
          <!-- -->
       
       </style>
+	  <style>	
+.mySlides {display:none;}
+</style>
    </head>
    <body data-spy="scroll" data-target=".navbar" data-offset="50">
       <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -153,9 +184,46 @@
          </div>
       </nav>
       <!-- Home section -->
-      <div id="home" class="container-fluid">
-         <h1><b><font color="grey">WELCOME TO MY PAGE</font></b></h1>
-      </div>
+
+    
+			
+					<div type="text">
+						<h1>
+					
+						<br>
+						
+						<br>
+						<div class="container">  
+								
+			
+									
+
+									<div id="home" class="container-fluid">
+							 <div class="parallax">	
+							 <br>
+							 <br>
+							 <br>
+							 
+							 <br>
+							 <center><font face="Andale Mono, monospace" color="white" style="font-size:72px;" > Welcome </b></font></center>
+
+							 
+									
+								
+						</div>
+					</div>
+					<div>
+					</div>
+		
+			</div>
+			
+			
+					
+               
+
+
+         
+      </div></div>
       <!-- About section -->
       <div id="about" class="container-fluid">
          <h1><b><font color="black"></b></font></h1>
@@ -184,7 +252,7 @@
                <div class="container">
 				   <h2>
 						   <br>
-						   <font face="Andale Mono, monospace" color="#424ef4" ><b>{ Software }</b></font>
+						   <font face="Andale Mono, monospace" color="#138D75" ><b>{ Software }</b></font>
 						   
 						   <br>
 						   <br>
@@ -233,7 +301,7 @@
 
 													<p>
 														<img src="Images/bg.jpg" height="250" width="200" style="color:#006666;">
-														<img src="Images/s4 bg.JPG" height="250" width="200">
+														<img src="Images/s4bg.jpg" height="250" width="200">
 													</p>
 													<br>
 										 
@@ -307,7 +375,7 @@
 								 
 						   <br>
 						 <!-- testing -->
-							<font face="Andale Mono, monospace" color="#0040ff" ><b>{ Hardware }</b></font>
+							<font face="Andale Mono, monospace" color="#138D75" ><b>{ Hardware }</b></font>
 					<div class="container" >
 					<br>
 						
@@ -335,11 +403,9 @@
 											<li style="color:#006666;"> High precision laser cut design </li>
 											<li style="color:#006666;"> Ideal for custom exhaust manifolds  </li>
 											<p>
-											<br>
-											<img src="Images/flangecompare.JPG" height="150" width="200" style="border-radius:10%;" >
-												
-											<img src="Images/ff.jpg" height="350" width="300" style="border-radius:10%;">
-												
+											
+											<img src="Images/ff.JPG" height="168" width="300" style="border-radius:10%;" >
+											
 											</p>
 										    </b></h5></font>
 											
@@ -369,13 +435,9 @@
 										  <li style="color:#006666;"> 	Elastic material to allow ease of installation </li>
 											<li style="color:#006666;"> Works for 00-09 SAAB 95 manual gearbox </li>
 											<br>
-											<img src="Images/skoff.jpg" height="200" width="200">
-											<img src="Images/sko.jpg" height="200" width="200">
-											<br>
+											<img src="Images/skoff.JPG" height="200" width="200" >
 											
-										
 										    </b></h5></font>
-										
 										</div>
 										<div class="modal-footer">
 										  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -406,9 +468,8 @@
 										  <p style="color:#006666;"> This will be used to occupy the vacant projector in the headlight for models :	 </p>
 											<li style="color:#006666;"> 06-09 SAAB 95 </li>
 											<br>
-											<img src="Images/hdbj.jpg" height="200" width="200" >
-											<img src="Images/hdtj.jpg" height="200" width="200" >
-											<br>
+											<img src="Images/hdbj.JPG" height="200" width="200" >
+											<img src="Images/hdtj.JPG" height="200" width="200" >
 										    </b></h5></font>
 										</div>
 										<div class="modal-footer">
@@ -442,7 +503,7 @@
 		 <div class="container">
             <div id="flip2">
                <h2>
-               <font face="Andale Mono, monospace" color="black" ><b>{ Contact me }</b></font>
+               <font face="Andale Mono, monospace" color="#F9E79F  " ><b>{ Contact me }</b></font>
                <h2>
             </div>
 			
@@ -453,8 +514,9 @@
                         <span class="glyphicon glyphicon-phone"</span> <a href="tel://1-716-445-5470"> 17164455470  </a>
                   </b>
                </h3>
-               <h3><span class="glyphicon glyphicon-envelope"</span>  <a href="mailto:andrewplewak@gmail.com?subject=Feedback"> andrewplewak@gmail.com </a></b></font></h3>
+               <h3><font face="Andale Mono, monospace" color="#D35400"><span class="glyphicon glyphicon-envelope"</span>  <a href="mailto:andrewplewak@gmail.com?subject=Feedback"> andrewplewak@gmail.com </a></b></font></h3>
             </div>
+			</font>
       </div>
 	  </div>
    </body>
@@ -477,4 +539,6 @@
        });
    });
 </script>
+<!-- image welcome page -->
+
 </html>
