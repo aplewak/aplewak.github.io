@@ -1,0 +1,152 @@
+html {
+    font-family: "Lato", Lucida Console;
+    background-color: 
+}
+
+body {
+    font-family: "Lato", Lucida Console;
+    background-color: #34495E;
+}
+
+.sidenav {
+    height: 200px;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-radius: 50px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #ff8533;
+    border-bottom: #ff8533  100px;
+    background-color: rgba(10,50,100,.25);
+    transition: 0.6s ease;
+}
+
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.w3-panel{
+    background-color: #4B6982;
+    border-radius: 10px;
+    height: 300px;
+    
+
+}
+
+.mySlides {
+   
+    display:none;
+    
+}
+
+.w3-content {
+    margin-top: 50px;
+}
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    
+
+    /* Full height */
+    height: 100%; 
+    width:100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color: #2A363B;
+    border-radius: 10px;
+    
+}
+
+
+
+.h1Title {
+    color:#7CA0E5;
+    float: left;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer;  
+    border-radius: 5px;
+}
+
+.column img:hover {
+    opacity: 10;
+
+   
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+.texty {
+    color:#B9D2D2;
+}
+
+.cent {
+    color: #B9D2D2;
+}
+.centerTag {
+    color: #B9D2D2;
+}
+
+
+
+
