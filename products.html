@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="css/site.css">
+  
+
+
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="products.html">Products</a>
+  <a href="contact.html">Contact</a>
+</div>
+<center>
+<div class="main">
+
+
+
+  <div class="w3-container w3-center w3-animate-top">
+    <p class="texty">Click the link to view recent software projects</p>
+
+
+    <h1 class="h1Title" ><b ><a href="https://github.com/aplewak">Software</a></b><h1>
+
+       <div class="column" >
+    <img id="bg" src="bgs.jpg"  style="width:100%"  onclick="getBGInfo()">
+
+
+
+    
+  </div>
+  <div class="column">
+    <img src="afr.jpg" alt="" style="width:100%" onclick="getAFRInfo()" >
+
+  </div>
+   <div class="column">
+    <h5 class="texty">
+    <p>Next Ups
+      <li>Headlights</li>
+      <li>Digital Oil Temp Sensor</li>
+    </p>
+  </h5>
+
+  </div>
+
+
+   
+    </div>
+
+  <div class="w3-container w3-center w3-animate-bottom">            
+  <h1 class="h1Title"><b>Hardware</b><h1>
+
+  <div class="column">
+    <img src="sko.jpg" alt="" style="width:100%" onclick="getSKInfo()">
+
+  </div>
+  <div class="column">
+    <img src="ff.jpg" alt="" style="width:100%"  onclick="getManInfo()">
+  </div>
+  <div class="column">
+    <img src="des.jpg" alt="" style="width:100%" onclick="getFLGInfo()" >
+  </div>
+
+
+</div>
+
+
+  </div>
+</center>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<br></br>
+
+<div class="jumbotron">
+               <center id="product" class="cent">Click Images for Details
+
+                
+                     
+               </center>
+            </div>
+
+</body>
+<script type="text/javascript">
+  function getBGInfo() {
+   document.getElementById("product").innerText = "Boost Gauge : \n A Digital device that monitors boost coming from a turbo. \n SPECS: -30 inHG - 100 PSI \n Realtime logging of maximum and minimum boost" ;
+  }
+  function getAFRInfo() {
+     document.getElementById("product").innerText = "AFR Gauge: \n A Digital device that monitors air fuel ratios. \n SPECS: 7-22/rich-lean " ;
+  }
+  function getSKInfo() {
+    document.getElementById("product").innerText = "Custom Shift Knob: \n 3D designed and 3D printed to remedy a failing part" ;
+  }
+  function getManInfo(){
+     document.getElementById("product").innerText = "Exhaust Manifold Flanges: \n 3D designed and Laser cut for custom exhaust manifold fabrication" ;
+  }
+  function getFLGInfo() {
+    document.getElementById("product").innerText = "Flanges: \n 3D designed and Laser cut flanges \n Tial wastegate Flanges \n Borg warner s200sx turbo flanges" ;
+
+  }
+
+</script>
+
+</html>
+
+
